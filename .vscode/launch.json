@@ -8,7 +8,13 @@
             "type": "cortex-debug",
             "runToEntryPoint": "main",
             "showDevDebugOutput": "none",
-            "servertype": "pyocd"
+            "servertype": "pyocd",
+            "serverArgs": [
+                "--target",
+                "nrf52833",
+                "--elf",
+                "${workspaceRoot}/_build/build.elf",
+            ]
         },
     ]
 }
